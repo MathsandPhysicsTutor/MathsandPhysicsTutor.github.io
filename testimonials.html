@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials | Maths & Physics Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-dark: #2d2d2d;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .testimonial-box {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect on testimonial boxes */
+        .testimonial-box:hover {
+            background: #f0f0f0;
+            border-left: 6px solid #e67e22;
+        }
+
+        .testimonial-box h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        .testimonial-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #ecf0f1;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 12px 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        #topBtn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+
+<script>
+    // Smooth page load animation
+    document.body.style.opacity = 0;
+    window.onload = () => {
+        document.body.style.transition = 'opacity 0.8s ease';
+        document.body.style.opacity = 1;
+    };
+
+    // Show scroll to top button
+    window.onscroll = function () {
+        const btn = document.getElementById("topBtn");
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<body>
+
+    <header>
+        <h1>Testimonials</h1>
+        <nav>
+            <a href="tutoring_website.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> A. Batool – Parent</h3>
+            <p>"From the moment I contacted Khalid regarding tutoring for my daughter he has been nothing short of fantastic. Responds promptly and clearly to any messages sent to him. My daughter feels at ease with Khalid’s teaching style and enjoys the 1-hour lessons she has with him."</p>
+            <p>"Khalid is an amazing tutor who puts the needs of the student at the heart of his teaching. He is able to put the student at ease, which is key, so that effective learning can take place. My child looks forward to each session. He is friendly and has a calm manner."</p>
+        </div>
+    
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> S. Dau – Parent</h3>
+            <p>"Khalid has been tutoring my son GCSE Maths for a few weeks and both me and my son are very happy so far. He has always been prompt in responding to any questions I might have and is adaptable in teaching my son specific topics, even though I give him only a few hours' notice. My son has been happy with his teaching methods and knowledge of subjects. All in all, very happy and would recommend Khalid."</p>
+        </div>
+    
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Ben Cook – A-Level Maths Student</h3>
+            <p>"Excellent tutor! I approached Khalid recently regarding A-Level maths tutoring to help with my upcoming exams. Very friendly and welcoming and very good at explaining things I’ve found difficult with the course to help with my understanding."</p>
+        </div>
+    
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> A. Humphreys – Parent</h3>
+            <p>"Khalid has really helped my son rebuild confidence in his own maths abilities after an end of year 12 result that he wasn't happy with. The approach Khalid uses during tuition strongly consolidates all learning with revisiting questions and scoring answers against the official mark schemes. There is weekly homework that focuses on similar topics to embed the learning and increase fluency."</p>
+        </div>
+    
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> S. Hayward – Parent</h3>
+            <p>"My daughter has struggled with the lack of support from her school over Covid and developed a few bad habits in her learning. I'd never engaged a tutor before but feel extremely lucky to have found Khalid."</p>
+        </div>   
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Stephan – Parent</h3>
+            <p>"My daughter has struggled with the lack of support from her school over Covid and developed a few bad habits in her learning. I'd never engaged a tutor before but feel extremely lucky to have found Khalid. He met with us, got to know my daughter and has been working with her over the Summer Holidays. My daughter has already shown signs of improvement and given time (with Khalid's support) I now have confidence that she will catch up and then excel. Khalid has been excellent and I highly recommend him."</p>
+        </div>
+        
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Elaine – Parent</h3>
+            <p>"Khalid has been tutoring my daughter for GCSE science/maths for a couple of months now and in that time her confidence has grown tremendously and she is really improving well. Homework is set each week and anything she doesn’t understand Khalid will explain on her next lesson. My daughter feels really comfortable with Khalid as he is very patient and explains things clearly. I would definitely recommend Khalid, so much so that in I am planning on him tutoring my son for A level sciences next year."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Shireen – Parent</h3>
+            <p>"Khalid has been tutoring my son for a couple of months now, to focus on science mostly on Physics. My son's feedback is that Khalid is very detailed when it comes to explaining areas that he is struggling with. He is now understanding concepts in Science and his confidence in Physics is building up. He is happy and relaxed to continue lessons with Khalid."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Amr – Parent</h3>
+            <p>"Khalid teaches my son Year 7 Combined Science. He is a very kind and professional tutor. His sessions are always planned to make progress and build up confidence. Khalid is always there, helping my son whenever he is unsure about a question. My son says 'I am not afraid to ask Mr Khalid when I’m stuck as he has made me feel comfortable around him. When I get something wrong, he goes over the key concepts and makes sure that I understand it in greater depth.'"</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Ying – Parent</h3>
+            <p>"Khalid is a patient and diligent tutor. Online lessons despite of limitations are going reasonably well with practice in lesson and homework to consolidate. Hopefully we can get back to face to face learning soon."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Abi – Parent</h3>
+            <p>"Very reliable and has all suitable requirements and resources to teach my 2 to a high standard. Very happy and will continue with the service."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Mazin – Parent</h3>
+            <p>"Khalid is a very good tutor who knows how to deliver his lesson in an effective way. He is punctual and enjoys what he is doing to support the young generation improving their engagement with education. My son showed very good improvement in Math after his lessons with Khalid. Thank you very much Khalid."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Weronika – Student</h3>
+            <p>"I've been having lessons for two and a half years and I've been very pleased with the help that I'm getting. Khalid has helped me to improve in many areas of maths and physics."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Martin – Parent</h3>
+            <p>"Khalid is friendly, reliable and patient. He knows his subject and is helping my daughter firm up her understanding of A-level concepts."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Nipa – Parent</h3>
+            <p>"Khalid was a good tutor who helped my son in physics. He helped him in all the aspects of the subject."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Nevien – Parent</h3>
+            <p>"Khalid helped my son achieve his target at the end of year 8 and back to the maths top group."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Rabina – Parent</h3>
+            <p>"Khalid is an excellent tutor who is very patient and takes the time to explain the different mathematical processes. I have no hesitation in recommending him to others. Khalid will be coming back to tutor my daughter in Physics and I have complete confidence in his abilities."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Alison – Parent</h3>
+            <p>"Khalid has been tutoring my son for a few weeks now and has very quickly made an impact on his progress. A recent parents evening confirmed the progress he has made. Of further note is the positive effect this has had on his confidence in the subject too. Khalid's input has been very beneficial."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Angel – Parent</h3>
+            <p>"Very patient, understanding and helpful."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Sophie – Parent</h3>
+            <p>"Khalid has had several sessions with Sophie. He is very pleasant, punctual, patient, well organized and the lessons seem to be going very well."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Christine – Parent</h3>
+            <p>"Khalid's calm, quiet and flexible tutoring approach has been just what our son has needed to help him progress with the essential basic maths skills. We would not hesitate to recommend him."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Deborah – Parent</h3>
+            <p>"Very reliable, clear and helpful. Would recommend."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Carmel – Parent</h3>
+            <p>"Khalid has just recently started to help my son with Physics, Maths and Statistics AS Level. He has benefitted considerably over the last few weeks and finds him to be very approachable and easy to talk to. We initially wanted tuition for a short period of time to catch up but now hope to continue through to A2."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Paul – Parent</h3>
+            <p>"Khalid has been excellent for my daughter in helping her with her preparation for GCSE Science. He has given her much more confidence and certainly made a significant difference. We are very pleased to have found him."</p>
+        </div>
+
+        <div class="testimonial-box">
+            <h3><i class="fas fa-user"></i> Timothy – Parent</h3>
+            <p>"Khalid is helping my Son with his A Level Mathematics. He has proved himself to be an excellent motivator and professional tutor: he has provided a structured approach, which has served my Son well."</p>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2025 Maths & Physics Tutoring Khalid. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

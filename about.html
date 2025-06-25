@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Maths & Physics Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-dark: #2d2d2d;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .content-box {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect on content boxes */
+        .content-box:hover {
+            background: #f0f0f0;
+            border-left: 6px solid #e67e22;
+        }
+
+        .content-box h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .content-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #ecf0f1;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 12px 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        #topBtn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+
+<script>
+    // Smooth page load animation
+    document.body.style.opacity = 0;
+    window.onload = () => {
+        document.body.style.transition = 'opacity 0.8s ease';
+        document.body.style.opacity = 1;
+    };
+
+    // Show scroll to top button
+    window.onscroll = function () {
+        const btn = document.getElementById("topBtn");
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="tutoring_website.html">Home</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="content-box">
+            <h2><i class="fas fa-user"></i> Who Am I?</h2>
+            <p>I am a professional Maths and Physics Tutor with 30 years of experience. I live in Wollaton, Nottingham, just 3 minutes walk from 2 NCT bus routes. I have helped over 1300 children with Maths, Science, and Physics. I specialize in exam preparation and have excellent references and feedback from many satisfied parents. I have also marked exam papers and can guide students to the essential key points to gain maximum marks.</p>
+        </div>
+
+        <div class="content-box">
+            <h2><i class="fas fa-briefcase"></i> My Experience</h2>
+            <p>With 30+ years of tutoring experience and a Masters degree in Electronic and Electrical Engineering from Loughborough University, I bring both academic expertise and practical teaching strategies to every session. I’ve worked with a wide range of students, each with unique goals and learning styles. I tutor online and in person from Primary, KS3, GCSE and A-level and also have experience with Adult learners and children with SEN. I use Zoom/Skype and have a Graphics tablet/pen allowing me to write onto the screen and share screens. I send any notes, summaries or questions done on the screen at the end. I have over 100 online textbooks/workbooks and digital lessons which I share online or by email. I am very experienced and fluent with using online portals such as MyMaths, SPARX & MathsWatch and know how to use them effectively to their full potential to aid progress and learning. I use online quizzes and tests to check understanding and make lessons interactive.
+                Many of my students continue with sessions for 5 or 6 years along with their siblings. Nearly all of my students improve by at least 2 or 3 grades from their starting position. I cover all the main exam boards including AQA, Edexcel and OCR.</p>
+        </div>
+
+        <div class="content-box">
+            <h2><i class="fas fa-check-circle"></i> Why Choose Me?</h2>
+            <p>Every session is tailored to your specific needs, whether you're aiming for a top grade or just want to feel more confident. I focus on building strong foundations, exam technique, and problem-solving skills — all in a supportive environment. I have a patient, friendly and flexible approach and am successful since I adjust my teаching style to match eаch student. I like to make my sessions as enjoyable and interactive as possible in order to motivate and engage my students. I provide real life examples which helps understanding and gives purpose. I simplify complex problems/topics into smaller, manageable tasks or points. I guide students to the correct path by asking key, well-timed questions or hints. I carry out an initial assessment and then create a schedule, targeting weaker topics. I review work regularly and I always provide weekly homework at the end of each session to help practice the concepts learnt in the lesson and regularly provide feedback to parents. I test students on material covered a few weeks earlier to ensure it has been retained.
+
+                I work on exam questions early allowing time to progress onto more challenging questions. I give guidance on efficient techniques, time planning and the best approach for all the various types of exam questions.</p>
+        </div>
+
+        <div class="content-box">
+            <h2><i class="fas fa-lightbulb"></i> My Philosophy</h2>
+            <p>Everyone can do well in Maths and Physics with the right mindset and support. My goal is to help you enjoy learning, reduce stress, and develop a real understanding that will last beyond the exam room.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Maths & Physics Tutoring Khalid. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

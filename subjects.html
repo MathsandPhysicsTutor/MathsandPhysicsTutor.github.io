@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subjects | Maths & Physics Tutoring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f6f8;
+            --card-bg: #ffffff;
+            --text-dark: #2d2d2d;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .subject-box {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect on subject boxes */
+        .subject-box:hover {
+            background: #f0f0f0;
+            border-left: 6px solid #e67e22;
+        }
+
+        .subject-box h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .subject-box p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #ecf0f1;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 40px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 12px 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        #topBtn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+
+<script>
+    // Smooth page load animation
+    document.body.style.opacity = 0;
+    window.onload = () => {
+        document.body.style.transition = 'opacity 0.8s ease';
+        document.body.style.opacity = 1;
+    };
+
+    // Show scroll to top button
+    window.onscroll = function () {
+        const btn = document.getElementById("topBtn");
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<body>
+
+    <header>
+        <h1>Subjects Offered</h1>
+        <nav>
+            <a href="tutoring_website.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="subject-box">
+            <h2><i class="fas fa-calculator"></i> KS2 Maths</h2>
+            <p>Build a strong foundation in Maths with engaging lessons in number operations, shapes, measurements, and problem-solving. Designed to boost confidence for young learners.</p>
+        </div>
+    
+        <div class="subject-box">
+            <h2><i class="fas fa-flask"></i> KS3 Maths and Physics</h2>
+            <p>Strengthen your skills in algebra, geometry, forces, and energy. A bridge between primary learning and GCSE preparation, focused on deep understanding across Maths and Physics.</p>
+        </div>
+    
+        <div class="subject-box">
+            <h2><i class="fas fa-calculator"></i> GCSE Maths</h2>
+            <p>Comprehensive support covering algebra, geometry, probability, and more. Clear strategies to master exam techniques and deepen understanding across all major exam boards.</p>
+        </div>
+
+        <div class="subject-box">
+            <h2><i class="fas fa-superscript"></i> GCSE Further Maths</h2>
+            <p>Explore advanced mathematical concepts such as matrices, complex numbers, calculus, and discrete mathematics. Designed for students aiming for top grades and further study in Maths.</p>
+        </div>
+    
+        <div class="subject-box">
+            <h2><i class="fas fa-flask"></i> GCSE Physics</h2>
+            <p>Learn key topics like forces, motion, electricity, energy, and waves. I focus on making complex concepts accessible, helping you link theory to everyday life and ace your exams.</p>
+        </div>
+    
+        <div class="subject-box">
+            <h2><i class="fas fa-superscript"></i> A-Level Maths</h2>
+            <p>Advanced tuition in pure mathematics, mechanics, and statistics. Develop critical thinking, problem-solving skills, and exam techniques needed for success at A-Level and beyond.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Maths & Physics Tutoring Khalid. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
