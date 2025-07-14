@@ -196,20 +196,28 @@
     <section>
         <div class="contact-box">
             <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
-            <p>If you're interested in tutoring or have any questions, feel free to contact me directly on Whatsapp or text:</p>
+            <p>If you're interested in tutoring or have any questions, feel free to contact me directly on Whatsapp or
+                text:</p>
             <p><strong>Phone:</strong> <a href="tel:+44 7968000726">+44 7968000726</a></p>
             <p>I'll aim to get back to you within 24 hours.</p>
         </div>
 
         <div class="contact-box">
             <h2><i class="fas fa-paper-plane"></i> Send a Message</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="7d7b58b0-c699-4e04-994f-7ecabbb4a0a6">
+            <form action="https://formsubmit.co/doctorfrost1@hotmail.com" method="POST">
+                <!-- Honeypot field for spam bots -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- Disable CAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
+
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
+                <input type="phone" name="email" placeholder="Your Phone Number" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+
         </div>
     </section>
 
